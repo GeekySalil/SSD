@@ -2474,7 +2474,7 @@
 
           const message = 
             `*New Appointment Request - Smile Studio Dental Clinic*\n\n` +
-            `• *Doctor:* Dr. Smriti (Dental Surgeon)\n` +
+            // `• *Doctor:* Dr. Smriti (Dental Surgeon)\n` +
             `• *Patient Name:* ${name}\n` +
             `• *Age:* ${age} Years\n` +
             `• *Contact Phone:* ${phone}\n` +
@@ -2482,8 +2482,8 @@
             `• *Preferred Date:* ${date}\n` +
             `• *Preferred Shift:* ${shift}\n` +
             `• *Treatment Needed:* ${service}\n` +
-            `• *Symptoms / Notes:* ${notes}\n\n` +
-            `_Clinic: Balaji Colony, Samneghat, Lanka, Varanasi – 221005_`;
+            `• *Symptoms / Notes:* ${notes}\n`;
+            // `_Clinic: Balaji Colony, Samneghat, Lanka, Varanasi – 221005_`;
 
           const encoded = encodeURIComponent(message);
           window.open(`https://wa.me/917903730691?text=${encoded}`, '_blank');
